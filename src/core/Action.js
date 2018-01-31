@@ -1,4 +1,5 @@
 import BzXML from 'bz-xml';
+
 import { uuid, toCamelCase, toBase64 } from '../utils';
 import { CUSTOM, HTTP_OPERATION, INPUT, OUTPUT } from '../constants';
 
@@ -6,7 +7,7 @@ const createAction = (actionDTO) => ({
   guid: uuid(),
   name: actionDTO.name,
   displayName: toCamelCase(actionDTO.name.replace('-', ' ')),
-  description: actionDTO.description,
+  description: actionDTO.description || actionDTO['description-en'] || actionDTO['description-es'],
   actiontype: CUSTOM,
   contenttype: '',
   resturl: '',

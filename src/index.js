@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import { resolve } from 'path';
 import { sync } from 'mkpath';
+
 import { Action, Auth, Definition, exporter } from './core';
 import { uuid } from './utils';
 
