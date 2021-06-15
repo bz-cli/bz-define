@@ -552,5 +552,12 @@ module.exports = {
 			required: true,
 			hide: false
 		}
+	],
+  properties: [
+		{
+			name: 'client_id',
+			required: true,
+			hide: false
+		}
 	]
 };

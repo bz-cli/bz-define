@@ -1,4 +1,4 @@
 .vscode
 def
-dist
+dist/*
 node_modules
