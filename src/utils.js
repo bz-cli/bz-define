@@ -1,4 +1,4 @@
-export const toBase64 = (source) => new Buffer(source).toString('base64');
+export const toBase64 = (source) => new Buffer.from(source).toString('base64');
 
 /**
  * Generates a UUID.
