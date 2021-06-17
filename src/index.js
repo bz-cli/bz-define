@@ -2,7 +2,7 @@
 import { resolve } from 'path';
 import { sync } from 'mkpath';
 
-import { Action, Auth, Definition, exporter } from './core';
+import { Action, Auth, Definition, Properties, exporter } from './core';
 import { uuid } from './utils';
 
 try {
@@ -12,6 +12,7 @@ try {
 		id: uuid(),
 		...config,
 		auth: Auth(config.auth),
+    properties: Properties(config.properties),
 		actions: Action(config.actions)
   });
 
