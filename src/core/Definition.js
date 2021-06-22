@@ -12,9 +12,7 @@ const makeDefinition = (definitionDTO) => ({
   author: definitionDTO.author || DEFAULT_USER,
   type: CUSTOM,
   systemdefinition: {
-    properties: [
-      definitionDTO.properties
-    ],
+    properties: definitionDTO.properties,
     authentications: [
       {
         authenticationtype: CUSTOM,
