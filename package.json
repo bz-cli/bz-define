@@ -1,6 +1,6 @@
 {
  "name": "bz-define",
- "version": "0.1.2",
+ "version": "0.2.0",
  "main": "dist/index.js",
  "author": {
   "name": "Carlos Camilo Lobo Ulloque",
@@ -22,7 +22,7 @@
  },
  "license": "MIT",
  "dependencies": {
-  "bz-xml": "^0.0.1",
+  "bz-xml": "^0.1.0",
   "mkpath": "^1.0.0",
   "package.json": "^2.0.1"
  },
